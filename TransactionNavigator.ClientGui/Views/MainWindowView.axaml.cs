@@ -1,13 +1,19 @@
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using TransactionNavigator.ClientGui.ViewModels;
 
 namespace TransactionNavigator.ClientGui.Views;
 
-public partial class MainWindow : Window
+public partial class MainWindowView : Window
 {
-    public MainWindow()
+    public MainWindowView()
     {
         InitializeComponent();
+        DataContext = new MainWindowViewModel();
+#if DEBUG
+        this.AttachDevTools();
+#endif
     }
 
     private void InitializeComponent()

@@ -8,7 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Models\" />
         <AvaloniaResource Include="Assets\**" />
         <None Remove=".gitignore" />
     </ItemGroup>
@@ -45,5 +44,24 @@
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
 
         <PackageReference Include="TextCopy" Version="6.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\VikingEntity\JsonBase\JsonBase.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\MainWindowView.axaml.cs">
+        <DependentUpon>MainWindowView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Controls\HomeView.axaml.cs">
+        <DependentUpon>HomeView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Controls\SettingsView.axaml.cs">
+        <DependentUpon>SettingsView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 </Project>

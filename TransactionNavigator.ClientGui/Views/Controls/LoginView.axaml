@@ -1,0 +1,23 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:TransactionNavigator.ClientGui.Views.Controls"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TransactionNavigator.ClientGui.Views.Controls.LoginView">
+
+        <Grid ColumnDefinitions="100,200" RowDefinitions="35,35,35,35">
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Login to Transaction Navigator" />
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Username:" />
+            <TextBox Grid.Row="1" Grid.Column="1" />
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Password:" />
+            <TextBox Grid.Row="1" Grid.Column="1" />
+
+            <Button Grid.Row="2" Grid.Column="1" Content="Login" />
+
+        </Grid>
+
+</UserControl>
